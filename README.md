@@ -1,7 +1,4 @@
-# Qin-F22-DumbPhone-Mod
-This project aims to transform your Qin F22 to a dumb phone and switch back when needed.
-
-# Qin F22 – Dual Personality Mod (Magisk)
+# Qin F22 – Dumb Phone Mod (Magisk)
 
 This project transforms the Qin F22 (and other Android phones with hardware keypads) into a dual-personality phone:  
 - Dumb mode: Touchscreen disabled, dumb launcher, T9 input method, radios off  
@@ -42,9 +39,9 @@ You can change these by editing `service.sh` and mapping your own keycodes.
    /data/adb/modules/dual_personality/
 3. Inside the module folder, place your scripts:
 
-- service.sh → runs in background after boot
+- `service.sh` → runs in background after boot
 
-- post-fs-data.sh → runs very early in boot
+- `post-fs-data.sh` → runs very early in boot
 
 4. Reboot your phone
 
@@ -136,7 +133,7 @@ This module **can** work on other Android phones with hardware keypads. To adapt
 
 ## Credits
 
- Scripts built with lots of trial, error, and exploration
+ Scripts were built with lots of trial, error, and exploration
 
  Thanks to ChatGPT for guidance, brainstorming, and debugging assistance
 
