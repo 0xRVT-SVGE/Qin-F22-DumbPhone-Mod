@@ -83,7 +83,7 @@ Run:
 
 These values are required in `service.sh` so the script can recreate the node when switching touchscreen back on.
 
-- Alternatives if Commands Fail
+## Alternatives if Commands Fail
 
  - If `rm /dev/input/eventX` does not persist (kernel respawns it), use:
 
