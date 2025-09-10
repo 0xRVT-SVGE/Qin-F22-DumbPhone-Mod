@@ -29,7 +29,7 @@ Both scripts log their actions into `/data/local/tmp/` for debugging.
 
 ## Key Combos
 
-- Enable normal mode → `KEY_3 + KEY_6 + VideoMode`  
+- Enable normal mode → `KEY_3 + KEY_6 + VideoMode (*)`  
 - Enable dumb mode → `KEY_1 + KEY_4 + Pound (#)`  
 
 You can change these by editing `service.sh` and mapping your own keycodes.  
@@ -62,7 +62,7 @@ Example for keypad:
   name: "mtk-kpd"
   KEY_1, KEY_2, KEY_3 ...
   ```
-- Use this path as KEYPAD_DEV.
+- Use this path as `KEYPAD_DEV`.
 
 Example for touchscreen:
   ```nocode
@@ -70,7 +70,7 @@ Example for touchscreen:
   name: "fts_ts"
   ABS_MT_POSITION_X, ABS_MT_POSITION_Y ...
   ```
-- Use this path as TOUCHSCREEN_DEV.
+- Use this path as `TOUCHSCREEN_DEV`.
 
 ## Detecting Major and Minor Numbers
 
@@ -84,7 +84,7 @@ Run:
   ```
 - Major = 13 , Minor = 64
 
-These values are required in service.sh so the script can recreate the node when switching touchscreen back on.
+These values are required in `service.sh` so the script can recreate the node when switching touchscreen back on.
 
 -Alternatives if Commands Fail
 
@@ -119,7 +119,7 @@ These values are required in service.sh so the script can recreate the node when
 
 This module **can** work on other Android phones with hardware keypads. To adapt it:
 
-1. Change **KEYPAD_DEV** and **TOUCHSCREEN_DEV** to match your device
+1. Change `KEYPAD_DEV` and `TOUCHSCREEN_DEV` to match your device
 
 2. Adjust **IME package names** (for example Gboard vs. T9)
 
@@ -142,4 +142,3 @@ This module **can** work on other Android phones with hardware keypads. To adapt
 
  Inspired by the desire to have a dual-personality phone: one part productivity-free dumbphone, one part full Android
 
-License
