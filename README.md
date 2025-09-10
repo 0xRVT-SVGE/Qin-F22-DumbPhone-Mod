@@ -36,8 +36,8 @@ You can change these by editing `service.sh` and mapping your own keycodes.
 1. Clone or download this repository  
 2. Copy the folder to Magisk modules location:  
    ```bash
-   /data/adb/modules/dual_personality/
-3. Inside the module folder, place your scripts:
+   /data/adb/modules/
+3. Inside the downloaded folder are placed your scripts:
 
 - `service.sh` → runs in background after boot
 
